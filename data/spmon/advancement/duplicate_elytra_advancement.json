@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:elytra"
+    },
+    "title": "Elytra duplication recipe enabled",
+    "description": "use an elytra to create a new elytra",
+    "background": "minecraft:entity/end_portal",
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "spmon:copy_elytra_recipe"
+      }
+    }
+  },
+  "rewards": {
+    "function": "spmon:duplicate_elytra"
+  }
+}

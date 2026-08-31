@@ -1,0 +1,19 @@
+t.player_highest_level = q.player.party.highest_level;
+t.party_count = math.random_integer(3,5);
+t.pokemon_level = math.max(math.ceil(t.player_highest_level * 0.75), 20);
+t.pokemon_level = 1;
+
+t.1 = 'chatot level=' + (t.pokemon_level);
+t.2 = 'squawkabilly level=' + (t.pokemon_level);
+t.3 = t.pokemon_level < 35 ? 'honedge level=' + (t.pokemon_level) : 'doublade level=' + (t.pokemon_level);
+t.4 = t.pokemon_level < 38 ? 'corsola galarian level=' + (t.pokemon_level) : 'cursola level=' + (t.pokemon_level);
+t.5 = t.pokemon_level < 30 ? 'corphish level=' + (t.pokemon_level) : 'crawdaunt level=' + (t.pokemon_level);
+t.6 = t.pokemon_level < 25 ? 'gastly level=' + (t.pokemon_level) : 'haunter level=' + (t.pokemon_level);
+t.7 = t.pokemon_level < 30 ? 'carvanha level=' + (t.pokemon_level) : 'sharpedo level=' + (t.pokemon_level);
+
+loop(t.party_count, {
+  t.result = q.random(t.1, t.2, t.3, t.4, t.5, t.6, t.7);
+  q.party.add_by_properties(t.result);
+});
+
+return true;

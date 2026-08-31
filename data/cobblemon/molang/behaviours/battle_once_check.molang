@@ -1,0 +1,1 @@
+q.player.get_npc_variable(q.npc, 'has_been_defeated') != 0 ? return true : return false;

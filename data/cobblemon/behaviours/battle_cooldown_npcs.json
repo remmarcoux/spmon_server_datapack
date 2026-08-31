@@ -1,0 +1,26 @@
+{
+  "name": "Battle has a Cooldown",
+  "description": "This trainer can only be beaten once per time increment",
+  "entityType": "cobblemon:npc",
+  "configurations": [
+    {
+      "type": "cobblemon:add_variables",
+      "variables": [
+        {
+          "variableName": "toggle_battle_cooldown",
+          "displayName": "Toggle Battle Cooldown",
+          "description": "Toggles the battle cooldown",
+          "type": "BOOLEAN",
+          "defaultValue": "1"
+        },
+        {
+          "variableName": "battle_cooldown_time",
+          "displayName": "Cooldown Time (IN HOURS)",
+          "description": "The time in hours that the player must wait before utilizing this NPC again.",
+          "type": "NUMBER",
+          "defaultValue": "8"
+        }
+      ]
+    }
+  ]
+}

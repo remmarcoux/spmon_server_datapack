@@ -1,0 +1,26 @@
+{
+  "name": "Battle gives players rewards",
+  "description": "This trainer gives a reward to the player upon defeat",
+  "entityType": "cobblemon:npc",
+  "configurations": [
+    {
+      "type": "cobblemon:add_variables",
+      "variables": [
+        {
+          "variableName": "battle_reward_item",
+          "displayName": "Reward Item ID",
+          "description": "The internal minecraft ID of the item to reward upon victory (ex: minecraft:iron_ingot)",
+          "type": "TEXT",
+          "defaultValue": "minecraft:emerald"
+        },
+        {
+          "variableName": "battle_reward_amount",
+          "displayName": "Amount of items given to the player upon victory",
+          "description": "The time in hours that the player must wait before utilizing this NPC again.",
+          "type": "NUMBER",
+          "defaultValue": "1"
+        }
+      ]
+    }
+  ]
+}

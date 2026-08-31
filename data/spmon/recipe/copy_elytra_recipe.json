@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+        "###",
+        "EeE",
+        "#P#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:phantom_membrane"
+        },
+        "E": {
+            "item": "minecraft:ender_eye"
+        },
+        "e": {
+            "item": "minecraft:elytra"
+        },
+        "P": {
+            "item": "minecraft:popped_chorus_fruit"
+        }
+    },
+    "result": {
+        "id": "minecraft:elytra"
+    }
+}

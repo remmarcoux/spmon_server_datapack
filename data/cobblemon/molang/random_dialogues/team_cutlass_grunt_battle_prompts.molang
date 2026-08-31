@@ -1,0 +1,7 @@
+t.1 = "'Yarr! Team Cutlass will not be defeated!'";
+t.2 = "'You think you can defeat us? Foolish!'";
+t.3 = "'Foolish of you to get in the way of the saviors who will stop the invasions!'";
+t.4 = "'You will never bring down Team Cutlass!'";
+t.5 = "'I wasn\'t a violent man before, but the calamity needs to be stopped at all costs'";
+
+return q.random(t.1, t.2, t.3, t.4, t.5);

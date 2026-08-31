@@ -1,0 +1,19 @@
+{
+  "name": "Battle Once",
+  "description": "This trainer can only be beaten once",
+  "entityType": "cobblemon:npc",
+  "configurations": [
+    {
+      "type": "cobblemon:add_variables",
+      "variables": [
+        {
+          "variableName": "battle_once",
+          "displayName": "Can be defeated only once",
+          "description": "Toggles if the player can only defeat this trainer once",
+          "type": "BOOLEAN",
+          "defaultValue": "1"
+        }
+      ]
+    }
+  ]
+}

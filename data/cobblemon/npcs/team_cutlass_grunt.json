@@ -1,0 +1,32 @@
+{
+  "baseScale": 1.0,
+  "resourceIdentifier": "cobblemon:pirate",
+  "names": [
+    "Team Cutlass Grunt"
+  ],
+  "presets": [
+    
+  ],
+  "interaction": {
+    "type": "dialogue",
+    "dialogue": "cobblemon:team_cutlass_dialogues"
+  },
+  "skill": 1,
+  "party": {
+    "type": "script",
+    "script": "cobblemon:team_cutlass_party",
+    "isStatic": false
+  },
+  "ai": [
+    {
+      "type": "cobblemon:apply_behaviours",
+      "behaviours": [
+        "cobblemon:core",
+        "cobblemon:battler",
+        "cobblemon:looks_at_players",
+        "cobblemon:stationary",
+        "cobblemon:battle_cooldown_npcs"
+      ]
+    }
+  ]
+}

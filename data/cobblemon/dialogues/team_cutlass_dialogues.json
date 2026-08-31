@@ -1,0 +1,75 @@
+{
+  "initializationAction": [
+    "q.npc.config.toggle_battle_cooldown && q.run_script('cobblemon:cooldown_check') ? q.dialogue.set_page('on_cooldown');",
+    "q.npc.config.battle_once && q.run_script('cobblemon:battle_once_check') ? q.dialogue.set_page('defeated');"
+  ],
+  "speakers": {
+    "npc": {
+      "name": {
+        "type": "expression",
+        "expression": "q.npc.name"
+      },
+      "face": "q.npc.face();"
+    },
+    "player": {
+      "face": "q.player.face();",
+      "name": {
+        "type": "expression",
+        "expression": "q.player.username"
+      }
+    }
+  },
+  "pages": [
+    {
+      "id": "battle_prompt",
+      "speaker": "npc",
+      "lines": [
+        {
+          "type": "expression",
+          "expression": "q.run_script('cobblemon:team_cutlass_grunt_battle_prompts');"
+        }
+      ],
+      "input": {
+        "type": "option",
+        "vertical": false,
+        "options": [
+          {
+            "text": "Battle",
+            "value": "battle",
+            "action": [
+              "q.dialogue.close();",
+              "v.battle = q.npc.start_battle(q.player);"
+            ],
+            "isSelectable": "!q.npc.is_defeated"
+          },
+          {
+            "text": "No",
+            "value": "no",
+            "action": "q.dialogue.close();"
+          }
+        ]
+      }
+    },
+    {
+      "id": "on_cooldown",
+      "speaker": "npc",
+      "lines": [
+        "§8§oBattle cooldown is active!\n",
+        "§8§oCurrent time remaining:",
+        {
+          "type": "expression",
+          "expression": "'§8§o' + q.run_script('cobblemon:cooldown_remaining_time');"
+        }
+      ],
+      "input": "q.dialogue.close();"
+    },
+    {
+      "id": "defeated",
+      "speaker": "npc",
+      "lines": [
+        "You have already beaten me, go away..."
+      ],
+      "input": "q.dialogue.close();"
+    }
+  ]
+}
