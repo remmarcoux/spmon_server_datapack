@@ -1,0 +1,22 @@
+t.1 = "'You look like you’re ready for a battle. Let’s see if that’s true!'";
+t.2 = "'My Pokémon and I never back down!'";
+t.3 = "'Prepare yourself—this won’t be an easy match!'";
+t.4 = "'I’ve been waiting for a worthy opponent!'";
+t.5 = "'Let’s settle this with a Pokémon battle!'";
+t.6 = "'My team is stronger than it looks!'";
+t.7 = "'Don’t underestimate me!'";
+t.8 = "'You’re about to find out what my Pokémon can do!'";
+t.9 = "'I hope you brought your best team!'";
+t.10 = "'This is where your winning streak ends!'";
+t.11 = "'Time to show you how a real trainer battles!'";
+t.12 = "'My Pokémon are ready. Are you?'";
+t.13 = "'I can already picture my victory!'";
+t.14 = "'Let’s make this battle one to remember!'";
+t.15 = "'You picked the wrong trainer to challenge!'";
+t.16 = "'No running away now!'";
+t.17 = "'I’ve trained hard for this moment!'";
+t.18 = "'One battle will show who’s the better trainer!'";
+t.19 = "'Get ready—things are about to get intense!'";
+t.20 = "'Let’s see if your Pokémon can keep up with mine!'";
+
+return q.random(t.1, t.2, t.3, t.4, t.5, t.6, t.7, t.8, t.9, t.10, t.11, t.12, t.13, t.14, t.15, t.16, t.17, t.18, t.19, t.20);

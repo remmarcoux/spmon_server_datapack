@@ -1,5 +1,5 @@
 {
-  "name": "Battle gives players rewards",
+  "name": "Battle Gives Rewards",
   "description": "This trainer gives a reward to the player upon defeat",
   "entityType": "cobblemon:npc",
   "configurations": [

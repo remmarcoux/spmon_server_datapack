@@ -26,7 +26,7 @@
       "lines": [
         {
           "type": "expression",
-          "expression": "q.run_script('cobblemon:team_cutlass_grunt_battle_prompts');"
+          "expression": "q.run_script('cobblemon:default_battle_prompts');"
         }
       ],
       "input": {
@@ -43,7 +43,7 @@
             "isSelectable": "!q.npc.is_defeated"
           },
           {
-            "text": "Cancel",
+            "text": "No",
             "value": "no",
             "action": "q.dialogue.close();"
           }
@@ -67,7 +67,7 @@
       "id": "defeated",
       "speaker": "npc",
       "lines": [
-        "You have already beaten me, go away..."
+        "A wel deserved victory, keep going!"
       ],
       "input": "q.dialogue.close();"
     }

@@ -1,0 +1,34 @@
+{
+  "baseScale": 1.0,
+  "resourceIdentifier": "cobblemon:ash",
+  "names": [
+    "Novice Trainer"
+  ],
+  "presets": [
+    
+  ],
+  "interaction": {
+    "type": "dialogue",
+    "dialogue": "cobblemon:default_trainer_dialogues"
+  },
+  "skill": 1,
+  "party": {
+    "type": "simple",
+    "pokemon": [
+      "magikarp"
+    ]
+  },
+  "ai": [
+    {
+      "type": "cobblemon:apply_behaviours",
+      "behaviours": [
+        "cobblemon:core",
+        "cobblemon:battler",
+        "cobblemon:looks_at_players",
+        "cobblemon:stationary",
+        "cobblemon:party_configuration",
+        "cobblemon:battle_cooldown_npcs"
+      ]
+    }
+  ]
+}
