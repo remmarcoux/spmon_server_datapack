@@ -1,6 +1,6 @@
 {
   "name": "Battle Gives Rewards",
-  "description": "This trainer gives a reward to the player upon defeat",
+  "description": "This trainer gives a reward to the player upon victory",
   "entityType": "cobblemon:npc",
   "configurations": [
     {
@@ -8,7 +8,7 @@
       "variables": [
         {
           "variableName": "battle_reward_item",
-          "displayName": "Reward Item ID",
+          "displayName": "Battle reward item ID",
           "description": "The internal minecraft ID of the item to reward upon victory (ex: minecraft:iron_ingot)",
           "type": "TEXT",
           "defaultValue": "minecraft:emerald"

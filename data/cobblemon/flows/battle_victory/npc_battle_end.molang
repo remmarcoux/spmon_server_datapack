@@ -34,5 +34,17 @@ for_each(t.loser, c.npc_losers, {
       q.player.set_npc_variable(t.loser.npc, 'has_been_defeated', 1);
       q.player.save_data();
     });
-  }
+  };
+
+  !q.is_blank(t.loser.npc.config.battle_reward_item) && q.is_number(t.loser.npc.config.battle_reward_amount) ? {
+    for_each(t.player_winner, c.player_winners, {
+      v.player = t.player_winner.player;
+      v.npc = t.loser.npc;
+      q.set_query('player', t.player_winner.player);
+      q.set_query('npc', t.loser.npc);
+      
+      q.run_command('give ' + q.player.username + ' ' + t.loser.npc.config.battle_reward_item + ' ' + t.loser.npc.config.battle_reward_amount);
+      q.player.save_data();
+    });
+  };
 });

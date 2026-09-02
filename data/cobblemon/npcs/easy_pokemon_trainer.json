@@ -4,9 +4,7 @@
   "names": [
     "Novice Trainer"
   ],
-  "presets": [
-    
-  ],
+  "presets": [],
   "interaction": {
     "type": "dialogue",
     "dialogue": "cobblemon:default_trainer_dialogues"

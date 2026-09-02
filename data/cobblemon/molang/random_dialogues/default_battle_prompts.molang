@@ -16,7 +16,7 @@ t.15 = "'You picked the wrong trainer to challenge!'";
 t.16 = "'No running away now!'";
 t.17 = "'I’ve trained hard for this moment!'";
 t.18 = "'One battle will show who’s the better trainer!'";
-t.19 = "'Get ready—things are about to get intense!'";
+t.19 = "'Get ready, things are about to get intense!'";
 t.20 = "'Let’s see if your Pokémon can keep up with mine!'";
 
 return q.random(t.1, t.2, t.3, t.4, t.5, t.6, t.7, t.8, t.9, t.10, t.11, t.12, t.13, t.14, t.15, t.16, t.17, t.18, t.19, t.20);

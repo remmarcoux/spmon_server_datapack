@@ -43,7 +43,7 @@
             "isSelectable": "!q.npc.is_defeated"
           },
           {
-            "text": "No",
+            "text": "Cancel",
             "value": "no",
             "action": "q.dialogue.close();"
           }
